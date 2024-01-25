@@ -21,18 +21,96 @@
 </head>
 
 <body>
-  <h1>Portfolio de Nahuel Romero</h1>
+  <header>
+    <h1>Portfolio de Nahuel Romero</h1>
+    <!--Enlaces internos-->
+    <nav>
+      <a href="#Proyectos">Proyectos</a>
+      <a href="#Proyectos">Proyectos</a>
+      <a href="#Contacto">Contactame</a>
+    </nav>
+  </header>
 
-  <p>Estudiante de <strong>Ingeniería en sistemas de información</strong> y apasionado por la tecnología.</p>
+  <main>
+    <h2>¿Quíen soy?</h2>
+    <p>Estudiante de <strong>Ingeniería en sistemas de información</strong> y apasionado por la tecnología.</p>
+    <img id="profile-picture" title="Foto de Nahuel" height="235" width="235" alt="Imagen de perfil de Nahuel."
+      src="Img/Foto perfil.jpg">
 
-  <h2>Experiencia</h2>
+    <h2 id="Proyectos">Proyectos realizados</h2>
 
-  <ul>
-    <li>Freelance - 2024</li>
-  </ul>
+    <aside>
+      <header>
+        <h3>Mis tecnologías favoritas:</h3>
+      </header>
+      <ul>
+        <li>HTML</li>
+        <li>Css</li>
+        <li>JavaScript</li>
+        <li>MongoDB</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </aside>
 
-  <img id="profile-picture" title="Foto de Nahuel" height="235" width="235" alt="Imagen de perfil de Nahuel."
-    src="Img/Foto perfil.jpg">
+    <section>
+      <article>
+        <header>
+          <h3>Web Comparacíon de precios</h3>
+        </header>
+        <p>Descripción general del proyecto.</p>
+        <footer>
+          <small>Tenologías utilizadas: HTML, Css, Js, MongoDB.</small>
+        </footer>
+      </article>
+
+      <article>
+        <header>
+          <h3>Web de nutrición</h3>
+        </header>
+        <p>Descripción general del proyecto.</p>
+        <footer>
+          <small>Tenologías utilizadas: HTML, Css, Js, MongoDB.</small>
+        </footer>
+      </article>
+    </section>
+
+    <section>
+      <h2>Preguntas frecuentes</h2>
+      <details name="info" open>
+        <summary>¿Qué estudios tienes?</summary>
+        <p>Estudio Ingeniería en sistemas de información, en UTN - FRT.</p>
+      </details>
+      <details name="info">
+        <summary>¿Qué te apasiona del mundo de la programación?</summary>
+        <p>Poder utilizar la programación como una herramienta para resolver poblemas o necesidades, utilizando mi
+          creatividad.</p>
+      </details>
+
+    </section>
+
+    <section>
+      <h2>Formulario de contacto</h2>
+      <form method="post" action="/">
+        <fieldset>
+          <legend>Información personal</legend>
+          <!--recordar estilar con display block a las etiquetas-->
+          <label class="formLabel">Nombre:
+            <input type="text" name="name" placeholder="Nombre" required>
+          </label>
+          <label class="formLabel">Email:
+            <input type="email" name="email" placeholder="Email@gmai.com" required>
+          </label>
+        </fieldset>
+        <input type="submit" value="Enviar contacto">
+      </form>
+    </section>
+
+  </main>
+  <footer>
+    <a href="https://github.com/NahuelRomero14" target="_blank" rel="noreferrer">GitHub</a>
+  </footer>
+
 </body>
 
 </html>
