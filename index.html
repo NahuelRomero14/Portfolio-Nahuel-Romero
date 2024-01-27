@@ -15,27 +15,47 @@
   <meta property="og:description"
     content="Estudiante de Ingeniería en sistemas de información y apasionado por la tecnología">
   <meta property="og:image" content="Img/Foto perfil.jpg">
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
+    /*
+    selector {
+      propiedad: valor; (esta linea es una declaración.)
+    }
+    */
+    /*h1 {}*/
 
+    body {
+      color: rgb(7, 46, 41);
+      background-color: rgb(255, 255, 255);
+      font-family: 'Roboto', sans-serif;
+
+    }
+
+    .link {
+      color: red;
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>Portfolio de Nahuel Romero</h1>
+    <h1>Nahuel Romero - Desarrollador web</h1>
     <!--Enlaces internos-->
     <nav>
-      <a href="#Proyectos">Proyectos</a>
-      <a href="#Proyectos">Proyectos</a>
-      <a href="#Contacto">Contactame</a>
+      <a class="link" href="#Proyectos">Proyectos</a>
+      <a class="link" href="#Proyectos">Proyectos</a>
+      <a class="link" href="#Contacto">Contactame</a>
     </nav>
   </header>
 
-  <main>
+  <main id="page-top">
     <h2>¿Quíen soy?</h2>
     <p>Estudiante de <strong>Ingeniería en sistemas de información</strong> y apasionado por la tecnología.</p>
-    <img id="profile-picture" title="Foto de Nahuel" height="235" width="235" alt="Imagen de perfil de Nahuel."
-      src="Img/Foto perfil.jpg">
+    <img id="profile-picture" title="Foto de Nahuel" alt="Imagen de perfil de Nahuel." src="Img/Foto perfil.jpg"
+      style=" width: 20%; aspect-ratio: 1704/1973 ;">
 
     <h2 id="Proyectos">Proyectos realizados</h2>
 
@@ -101,14 +121,19 @@
           <label class="formLabel">Email:
             <input type="email" name="email" placeholder="Email@gmai.com" required>
           </label>
+          <label class="formLabel">Mensaje:
+            <input type="text" name="text" placeholder="Escriba aquí su mensaje." required>
+          </label>
+
         </fieldset>
-        <input type="submit" value="Enviar contacto">
+        <button>Enviar Formulario</button>
       </form>
     </section>
 
   </main>
   <footer>
     <a href="https://github.com/NahuelRomero14" target="_blank" rel="noreferrer">GitHub</a>
+    <a href="#page-top">Inicio</a>
   </footer>
 
 </body>
