@@ -24,18 +24,44 @@
     selector {
       propiedad: valor; (esta linea es una declaración.)
     }
+
     */
-    /*h1 {}*/
+
+    :root {
+      --primary-color: rgb(255, 255, 255);
+      --secondary-color: rgb(1, 145, 125);
+      --tertiary-color: rgb(7, 46, 41);
+      --fourth-color: rgb(52, 152, 219);
+
+      /*AL pasar los estilos a ccs externo las variables deben referenciarse sin "--"*/
+    }
 
     body {
-      color: rgb(7, 46, 41);
-      background-color: rgb(255, 255, 255);
+      color: var(--tertiary-color);
+      background-color: var(--primary-color);
       font-family: 'Roboto', sans-serif;
 
     }
 
     .link {
       color: red;
+      /*cambiar*/
+    }
+
+    .changing-button {
+      background-color: var(--primary-color);
+      border-color: var(--secondary-color);
+      color: var(--secondary-color);
+      border-style: solid;
+      border-radius: 100px;
+      padding: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+    }
+
+    .changing-button:hover {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
     }
   </style>
 </head>
@@ -122,11 +148,12 @@
             <input type="email" name="email" placeholder="Email@gmai.com" required>
           </label>
           <label class="formLabel">Mensaje:
-            <input type="text" name="text" placeholder="Escriba aquí su mensaje." required>
+            <!--<input type="text" name="text" placeholder="Escriba aquí su mensaje." required>-->
+            <textarea class="textarea" name="message" rows="5" required
+              placeholder="Escriba aquí su mensaje."></textarea>
           </label>
-
         </fieldset>
-        <button>Enviar Formulario</button>
+        <button class="changing-button">Enviar Formulario</button>
       </form>
     </section>
 
